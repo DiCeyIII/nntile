@@ -17,6 +17,7 @@
 #include <nntile/kernel/accumulate_maxsumexp.hh>
 #include <nntile/kernel/add_slice_inplace.hh>
 #include <nntile/kernel/add_slice.hh>
+#include <nntile/kernel/scal_slice.hh>
 #include <nntile/kernel/add_fiber_inplace.hh>
 #include <nntile/kernel/add_fiber.hh>
 #include <nntile/kernel/prod_slice.hh>

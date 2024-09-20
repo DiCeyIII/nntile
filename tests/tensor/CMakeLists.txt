@@ -24,6 +24,7 @@ set(TESTS_MPI
     "add_fiber"
     "add_slice_inplace"
     "add_slice"
+    "scal_slice"
     "addcdiv"
     "axpy"
     "clear"

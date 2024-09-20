@@ -24,6 +24,7 @@
 #include <nntile/starpu/axpy.hh>
 #include <nntile/starpu/add_slice_inplace.hh>
 #include <nntile/starpu/add_slice.hh>
+#include <nntile/starpu/scal_slice.hh>
 #include <nntile/starpu/add_fiber_inplace.hh>
 #include <nntile/starpu/add_fiber.hh>
 #include <nntile/starpu/prod_slice.hh>
@@ -111,6 +112,7 @@ void init()
     axpy::init();
     add_slice_inplace::init();
     add_slice::init();
+    scal_slice::init();
     add_fiber_inplace::init();
     add_fiber::init();
     prod_slice::init();
@@ -193,6 +195,7 @@ void restrict_where(uint32_t where)
     axpy::restrict_where(where);
     add_slice_inplace::restrict_where(where);
     add_slice::restrict_where(where);
+    scal_slice::restrict_where(where);
     add_fiber_inplace::restrict_where(where);
     add_fiber::restrict_where(where);
     prod_slice::restrict_where(where);
@@ -275,6 +278,7 @@ void restore_where()
     axpy::restore_where();
     add_slice_inplace::restore_where();
     add_slice::restore_where();
+    scal_slice::restore_where();
     add_fiber_inplace::restore_where();
     add_fiber::restore_where();
     prod_slice::restore_where();

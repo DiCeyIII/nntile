@@ -87,6 +87,7 @@ set(TESTS_NOT_IMPLEMENTED
     "softmax"
     "hypot"
     "add_slice"
+    "scal_slice"
     "prod_fiber3"
     )
 
